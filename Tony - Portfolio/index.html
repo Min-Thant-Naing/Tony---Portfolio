@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Tony - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <nav>
+    <button class="topmenu" onclick="location.href='#about_me'">About Me</button>
+    <button class="topmenu" onclick="location.href='#skills'">Skills</button>
+    <button class="topmenu" onclick="location.href='#projects'">Projects</button>
+    <button class="topmenu" onclick="location.href='#recommendations'">Recommendations</button>
+  </nav>
+
+  <section id="about_me" class="container">
+    <div class="about_me_content">
+      <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"
+        alt="Tony's profile">
+      <div style="flex: 1">
+        <h1>Hi, I'm Tony! <img src="html_finalprojimages/waving-hand.png" width="40" /></h1>
+        <p style="text-align: justify;">I am a learner, willing to develop AI app soon. This is my first development
+          with basic tools: <span class="highlight-yellow">HTML, CSS, and JavaScript</span>. This is an assignment by
+          Coursera course: AI developer. Plus, this is where u will see web from GITHUB. </p>
+        <div class="contact_info"><img src="html_finalprojimages/envelope.png" alt="Email Icon">
+          minthantnaing414@gmail.com</div>
+        <div class="contact_info"><img src="html_finalprojimages/phone.png" alt="Phone Icon"> +601129645568(Malaysia)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 style="text-align:center;">Skills</h2>
+    <div class="all_skills">
+      <div class="skill">
+        <img src="html_finalprojimages/html5.png">
+        <h3>HTML</h3>
+        <p>1 year experience</p>
+      </div>
+      <div class="skill">
+        <img src="html_finalprojimages/CSS3.png">
+        <h3>CSS</h3>
+        <p>1 year experience</p>
+      </div>
+      <div class="skill">
+        <img src="html_finalprojimages/js.jpeg">
+        <h3>JavaScript</h3>
+        <p>1 year experience</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 style="text-align:center;">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Learn Python</h3>
+        <p>Using Python, AI will be developed, with Python Flask, TensorFlow, and PyTorch.</p>
+      </div>
+      <div class="project-card">
+        <h3>AI Prompt</h3>
+        <p>Using techniques: zero shot, tree of thought, interviewing, a lot of benefits was obtained when building this web.</p>
+      </div>
+      <div class="project-card">
+        <h3>Real-World AI App</h3>
+        <p>Last but not least, using programming languages at some parts, the app mostly used in real world powered by Ai will be developed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="recommendations">
+    <h2 style="text-align:center;">Recommendations</h2>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>Tony is a fast learner, collaborative, and brings positive energy to any dev
+        team.<span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>He consistently goes the extra mile to ensure high-quality project
+        delivery.<span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <fieldset style="width: 450px;">
+        <h3 style="text-align: center;">Leave a Recommendation</h3>
+        <input type="text" placeholder="Name (Optional)"><br />
+        <textarea id="new_recommendation" rows="6" placeholder="Message"></textarea>
+        <div style="text-align:center;">
+          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+  <div class="iconbutton">
+    <a href="#about_me">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="iconbutton_up" fill="#ffffff">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+      </svg>
+    </a>
+  </div>
+
+  <div class="popup_container">
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" />
+      <h3>Thanks for leaving a Recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </div>
+</body>
+
+</html>
